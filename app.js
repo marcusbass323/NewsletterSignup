@@ -11,6 +11,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // STATIC FOLDER
 app.use(express.static(path.join(__dirname, 'public')));
 
+//SIGNUP ROUTE
+app.post('/signup', (req, res) => {
+    const { firstName, lastName, email } = req.body;
+
 
 const PORT = process.env.PORT || 7000;
 
