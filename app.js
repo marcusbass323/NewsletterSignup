@@ -15,6 +15,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.post('/signup', (req, res) => {
     const { firstName, lastName, email } = req.body;
 
+        //FIELD VALIDATION
+        if (!firstName || !lastName || !email) {
+            res.redirect('/fail.html')
+            return;
+        } else if (firstName || lastName || email) {
+            res.redirect('/success.html')
+        }
+
 
 const PORT = process.env.PORT || 7000;
 
