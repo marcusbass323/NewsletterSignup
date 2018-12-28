@@ -1,0 +1,30 @@
+{
+  "name": "NewsletterSignup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcusbass323/NewsletterSignup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcusbass323/NewsletterSignup/issues"
+  },
+  "homepage": "https://github.com/marcusbass323/NewsletterSignup#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "i": "^0.3.6",
+    "nodemon": "^1.18.9"
+  }
+}
