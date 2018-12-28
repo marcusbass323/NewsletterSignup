@@ -2,10 +2,10 @@
   "name": "NewsletterSignup",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app",
-    "dev": "nodemon"
+    "dev": "nodemon app"
   },
   "repository": {
     "type": "git",
