@@ -1,5 +1,5 @@
 {
-  "name": "NewsletterSignup",
+  "name": "newsletter_signup",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -21,7 +21,8 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "yarn": "^1.13.0"
   },
   "devDependencies": {
     "i": "^0.3.6",

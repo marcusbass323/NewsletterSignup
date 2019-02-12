@@ -38,22 +38,29 @@ app.post('/signup', (req, res) => {
         ]
     }
 
+    //STRINGIFY THE DATA 
+
     const postData = JSON.stringify(data);
+
+    //MAILCHIMP URL AND AUTH KEY
 
     const options = {
         url: 'https://us19.api.mailchimp.com/3.0/lists/7f11fd9236',
         method: 'POST',
         headers: {
-            Authorization: 'auth b1b344c28c087c71888788935f0b24af-us19'
+            Authorization: 'auth 51f1c4dd04b1b5734260aa91c595e188-us19'
         },
         body: postData
     }
+
+    //REQUEST METHOD
 
     request(options, (err, response, body) => {
         if (err) {
             res.redirect('/fail.html')
         } else {
             if (response.statusCode === 200) {
+                return 
                 res.redirect('/success.html')
             } else {
                 res.redirect('/fail.html')
